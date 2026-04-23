@@ -1,0 +1,46 @@
+User Guide
+Step 1: Power Connections
+
+Connect all components using the breadboard.
+
+Connect positive (VCC) and negative (GND) of the servo motors to the power rails of the breadboard.
+Connect the breadboard power rails to the power bank (5V and GND).
+Also power the ESP32 using the same power bank (via USB or Vin & GND).
+Step 2: Servo Signal Connections
+Connect the signal wire of the hopper servo motor to GPIO pin 12 of the ESP32.
+Connect the signal wire of the slide servo motor to GPIO pin 13.
+Ensure all grounds are common.
+Step 3: Configure Wi-Fi in ESP32 Code
+
+Open the ESP32 code and update:
+
+Wi-Fi Name (SSID)
+Wi-Fi Password
+Upload the code to the ESP32 using Arduino IDE.
+Step 4: Set IP Address in Laptop Code
+
+After uploading the code:
+
+Open the Serial Monitor and note the IP address displayed by the ESP32.
+Update this IP address in your laptop (Python) program.
+Step 5: Connect Webcam and Run Program
+Connect the webcam to the laptop.
+Run the Python/OpenCV program.
+Step 6: Set Hopper Position
+
+Ensure the hopper servo is at 90° (Detect Position).
+This is necessary for proper alignment of the ball in front of the camera.
+
+Step 7: Calibrate Slide Servo
+Show a pink ball to the camera.
+Observe where the slide servo moves.
+If incorrect:
+Remove the servo horn (arm)
+Adjust it manually
+Reattach it so it points to the correct container for pink
+Step 8: Run the System
+
+Run the program in the VS Code terminal.
+
+If it shows “Connected through Wi-Fi”, the system is working properly.
+If not, restart the laptop program and try again.
