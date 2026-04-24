@@ -44,3 +44,5 @@ Run the program in the VS Code terminal.
 
 If it shows “Connected through Wi-Fi”, the system is working properly.
 If not, restart the laptop program and try again.
+
+**change the path of th csv file in the laptop code **
